@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Post</title>
+  <link rel="stylesheet" href="./src/css/create-post.css">
+</head>
+<body>
+  <header>
+    <h1>Create Post</h1>
+    <a href="home.html">Back to Home</a>
+  </header>
+  <main>
+    <form id="post-form">
+      <input type="text" id="title" placeholder="Post Title" required>
+      <textarea id="story" placeholder="Your story..." required></textarea>
+      <input type="file" id="image-upload">
+      <button type="submit">Save Post</button>
+    </form>
+  </main>
+  <footer class="footer bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Blog App</p>
+  </footer>
+  <script type="module" src="./src/utils/is-user-login.js"></script>
+  <script type="module" src="./src/utils/storage.js"></script>
+  <script type="module" src="./src/scripts/create-post.js"></script>
+</body>
+</html>
+
+
