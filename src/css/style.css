@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5ded2, #faf4f6);
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #351717;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffdd00;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Layout */
+.main {
+  margin-top: 120px; /* Space for fixed header */
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px; /* Increased the max-width for larger post container */
+}
+
+/* Bloggers List */
+.bloggers-container {
+  width: 300px;
+  background-color: #f0e4d7; /* Light brown background */
+  border: 1px solid #d2b48c; /* Border matching the brown color scheme */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.bloggers-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #351717; /* Deep brown for title */
+  margin-bottom: 1rem;
+}
+
+.bloggers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blogger-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #d2b48c; /* Brown background for cards */
+  border: 1px solid #a97c50; /* Slightly darker border */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blogger-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blogger-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.blogger-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* White text for better contrast */
+  margin: 0;
+}
+
+.blogger-email {
+  font-size: 0.9rem;
+  color: #f5f5f5; /* Slightly lighter white */
+  margin: 0;
+}
+
+/* Posts Section */
+.posts-section {
+  flex-grow: 1;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: calc(48% - 1rem); /* Wider posts */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.author-name {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.post-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.post-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.post-story {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Buttons */
+button {
+  background-color: #351717;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #572222;
+}
+
+/* Footer */
+.footer {
+  background-color: #331f1f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
